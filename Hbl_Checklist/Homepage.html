@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Audit Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>QA Audit Report</h1>
+    <p>Select an option to proceed:</p>
+    <button onclick="createNewReport()">Create New Report</button>
+    <button onclick="viewEditReport()">View/Edit Report</button>
+
+    <script>
+        function createNewReport() {
+            window.location.href = 'create_report.html'; // Redirect to create report page
+        }
+        function viewEditReport() {
+            window.location.href = 'view_edit_report.html'; // Redirect to view/edit report page
+        }
+    </script>
+</body>
+</html>
